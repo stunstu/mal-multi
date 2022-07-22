@@ -1,0 +1,15 @@
+There are total seven datasets public here, and BTest consists of BTest-1 and BTest-2:
+PTr: training dataset for pornographic website;
+PTest: testing dataset for pornographic website;
+GTr: training dataset for gambling website;
+GTest: testing dataset for gambling website;
+BTr: training dataset for benign website;
+BTest: testing dataset for benign website.
+
+For each dataset, we than give examples to descript the format of datasets:
+dn_0,dt_0,[t_0,t_1,t_2]
+dn_0,dt_1,[t_0,t_1]
+where, 
+dn_0: the first website domain in the given dataset;
+dt_0 and dt_1: the first and second HTML document of dn_0;
+t_0, t_1, t_2: the 1st, 2nd and 3rd term extracted from corresponding HTML document.
