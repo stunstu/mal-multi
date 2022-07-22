@@ -1,2 +1,2 @@
-# mal-multi
-dataset for malicious multi-classification
+# public dataset
+dataset for detecting pornographic and gambling websites
