@@ -1,4 +1,6 @@
 There are total seven datasets public here, and BTest consists of BTest-1 and BTest-2:
+
+==For Document Classification==
 PTr: training dataset for pornographic website;
 PTest: testing dataset for pornographic website;
 GTr: training dataset for gambling website;
@@ -6,10 +8,26 @@ GTest: testing dataset for gambling website;
 BTr: training dataset for benign website;
 BTest: testing dataset for benign website.
 
-For each dataset, to make harmful information invisible and commercial protection, we anonymise datasets and give examples to make explanations:
+For each dataset above, to make harmful information invisible and commercial protection, we anonymise datasets and give examples to make explanations:
 "dn_0,dt_0,[t_0,t_1,t_2]"
 "dn_0,dt_1,[t_0,t_1]"
 where, 
 dn_0: the first website domain in the given dataset;
 dt_0 and dt_1: the first and second HTML document of dn_0;
 t_0, t_1, t_2: the 1st, 2nd and 3rd term extracted from corresponding HTML document.
+
+==For Fake-Normal Detection==
+edge_domain_HP.txt: edges list of domain and hyperlink domain;
+edge_domain_IMG.txt: edges list of domain and image link;
+edge_domain_TM.txt: edges list of domain and key words in <title>/<meta>;
+edge_domain_TV.txt: edges list of domain and tag vector;
+edge_domain_EMAIL.txt: edges list of domain and email;
+edge_domain_KEY.txt: edges list of domain and third-party KeyID;
+edge_domain_dnsA.txt: edges list of domain and reverse IP address;
+
+For each dataset above, to make harmful information invisible and commercial protection, we anonymise datasets and give examples to make explanations:
+"domain_0,hp_0,2"
+where, 
+domain_0: the first website domain in the given dataset;
+hp_0: the first hyperlink in the given dataset;
+2: weight, how many times domain_0 and hp_0 being connected in the given dataset.
